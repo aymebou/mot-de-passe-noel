@@ -1,15 +1,15 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import Marine from './img/Marine.jpg';
-import RV from './img/RV.jpg';
-import Nath from './img/Nath.jpg';
-import Cricri from './img/Cricri.jpg';
-import JP from './img/JP.jpg';
-import Axel from './img/Axel.jpg';
-import Aude from './img/Aude.jpg';
-import Aymeric from './img/Aymeric.jpg';
+import Player1 from './img/player1.png';
+import Player2 from './img/player2.png';
+import Player3 from './img/player3.png';
+import Player4 from './img/player4.jpg';
+import Player5 from './img/player5.png';
+import Player6 from './img/player6.png';
+import Player7 from './img/player7.jpg';
+import Player8 from './img/player8.jpg';
 
-const players = ['RV', 'Nath', 'Cricri', 'JP', 'Axel', 'Marine', 'Aude', 'Aymeric']
+const players = ['RV', 'Nath', 'Laulau', 'Karine', 'Val', 'Marco', 'Pauline', 'Dam']
 const teamIndexes = [0,0,1,1,2,2,3,3].sort(() => Math.random() - 0.5);
 var playersWithVisibility = players.map((e) => [e, true]);
 
@@ -56,14 +56,14 @@ const TeamSlate = (team) => {
 
 const imgFile = (playername) => {
     const translator = {
-        'RV': RV,
-        'Nath': Nath, 
-        'Cricri': Cricri, 
-        'JP': JP, 
-        'Axel': Axel, 
-        'Marine': Marine, 
-        'Aude': Aude, 
-        'Aymeric': Aymeric
+        'RV': Player1, 
+        'Nath': Player2, 
+        'Laulau': Player3, 
+        'Karine': Player4, 
+        'Val': Player5, 
+        'Marco': Player6, 
+        'Pauline': Player7, 
+        'Dam': Player8,
     }
     return translator[playername]
 }
